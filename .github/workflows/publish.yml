@@ -1,4 +1,4 @@
-name: Build and Release (1.17)
+name: Build and Release
 
 on:
   workflow_dispatch:
