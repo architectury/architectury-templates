@@ -36,13 +36,7 @@ fun main() {
         val repository = github.getRepository(System.getenv("GITHUB_REPOSITORY"))
         githubRelease = repository.createRelease("release_" + System.getenv("GITHUB_JOB"))
             .name("Architectury Templates")
-            .body("""
-                |Architectury Templates can be used for setting your own architectury projects, for converting your existing projects to architectury projects, please refer to [Architectury Example Mod](https://github.com/architectury/architectury-example-mod) instead.
-                |
-                |The following templates are offered in [Creative Commons Zero v1.0 Universal](https://github.com/architectury/architectury-example-mod/blob/1.17.1/LICENSE), TL;DR: You can do anything with these templates.
-                |
-                |Architectury API is added to the templates by default, there are instructions on how to remove them within the buildscripts, depending on the API is **not required** to use the Architectury toolchain.
-            """.trimMargin())
+            .body(Paths.get(System.getenv("BODY_PATH")).toFile().readText())
             .create()
     }
     config.versions.forEach { (id, entry) ->

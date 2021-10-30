@@ -18,6 +18,7 @@ task run(type: JavaExec, dependsOn: jar) {
     mainClass = "dev.architectury.templates.GenerateTemplatesKt"
     environment "CONFIG_PATH", file("generator.config.json").absolutePath
     environment "OUTPUT_PATH", file("build/templates").absolutePath
+    environment "BODY_PATH", file("body.txt").absolutePath
     environment "PUBLISH", "true"
     environment "GITHUB_TOKEN", System.getenv("GITHUB_TOKEN")
     environment "GITHUB_REPOSITORY", System.getenv("GITHUB_REPOSITORY")
