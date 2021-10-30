@@ -34,7 +34,7 @@ fun main() {
     if (publish) {
         val github = GitHubBuilder().withOAuthToken(System.getenv("GITHUB_TOKEN")).build()
         val repository = github.getRepository(System.getenv("GITHUB_REPOSITORY"))
-        githubRelease = repository.createRelease("release_" + System.getenv("GITHUB_JOB"))
+        githubRelease = repository.createRelease("release_" + System.getenv("GITHUB_JOB") + "_" + System.currentTimeMillis())
             .name("Architectury Templates")
             .body(Paths.get(System.getenv("BODY_PATH")).toFile().readText())
             .create()
