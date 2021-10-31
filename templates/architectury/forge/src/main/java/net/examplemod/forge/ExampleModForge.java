@@ -1,6 +1,6 @@
 package net.examplemod.forge;
 
-import dev.architectury.platform.forge.EventBuses;
+import @ARCHITECTURY_PACKAGE@.platform.forge.EventBuses;
 import net.examplemod.ExampleMod;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;

@@ -36,7 +36,10 @@ fun main() {
         val repository = github.getRepository(System.getenv("GITHUB_REPOSITORY"))
         githubRelease = repository.createRelease("release_" + System.getenv("GITHUB_JOB") + "_" + System.currentTimeMillis())
             .name("Architectury Templates")
-            .body(Paths.get(System.getenv("BODY_PATH")).toFile().readText())
+            .body(Paths.get(System.getenv("BODY_PATH")).toFile().readText() + "\n\n## Downloads\n" +
+                    config.versions.entries.joinToString("\n") { (id, entry) ->
+                        "- $id.zip: ${entry.description}"
+                    })
             .create()
     }
     config.versions.forEach { (id, entry) ->
@@ -121,6 +124,7 @@ data class TemplateConfig(
 @Serializable
 data class TemplateEntry(
     val templates: List<String>,
+    val description: String,
     val inherit_tokens: String? = null,
     val tokens: Map<String, JsonElement>,
 )

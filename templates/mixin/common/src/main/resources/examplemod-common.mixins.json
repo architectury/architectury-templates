@@ -1,12 +1,12 @@
 {
-    "required": true,
-    "package": "net.examplemod.mixin",
-    "compatibilityLevel": "@MIXIN_COMPAT_LEVEL@",
-    "client": [
-    ],
-    "mixins": [
-    ],
-    "injectors": {
-        "defaultRequire": 1
-    }
+  "required": true,
+  "package": "net.examplemod.mixin",
+  "compatibilityLevel": "@MIXIN_COMPAT_LEVEL@",
+  "client": [
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }

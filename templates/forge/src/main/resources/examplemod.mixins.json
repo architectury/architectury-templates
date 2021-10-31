@@ -1,10 +1,11 @@
 {
   "required": true,
-  "package": "net.examplemod.mixin.fabric",
+  "package": "com.example.examplemod.mixin",
   "compatibilityLevel": "@MIXIN_COMPAT_LEVEL@",
-  "client": [
-  ],
   "mixins": [
+  ],
+  "client": [
+    "ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1
