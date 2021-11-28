@@ -4,6 +4,8 @@
     "COMPILE_JAVA_16": "    options.release = 16",
     "COMPILE_JAVA_8_ARCH": "\n        // The Minecraft launcher currently installs Java 8 for users, so your mod probably wants to target Java 8 too\n        // JDK 9 introduced a new way of specifying this that will make sure no newer classes or methods are used.\n        // We'll use that if it's available, but otherwise we'll use the older option.\n        def targetVersion = 8\n        if (JavaVersion.current().isJava9Compatible()) {\n            options.release = targetVersion\n        }",
     "COMPILE_JAVA_16_ARCH": "        options.release = 16",
+    "JAVA_8": "VERSION_8",
+    "JAVA_16": "VERSION_16",
     "FABRIC_LOADER": {
       "filter": ".*",
       "pom": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/maven-metadata.xml"
@@ -17,6 +19,7 @@
       ],
       "tokens": {
         "MINECRAFT": "1.16.5",
+        "JAVA_VERSION": "#JAVA_8",
         "COMPILE_JAVA": "#COMPILE_JAVA_8",
         "MCMETA_FORMAT": "6",
         "JEI_MAJOR": "7",
@@ -39,6 +42,7 @@
       ],
       "tokens": {
         "MINECRAFT": "1.16.5",
+        "JAVA_VERSION": "#JAVA_8",
         "COMPILE_JAVA": "#COMPILE_JAVA_8_ARCH",
         "FABRIC_LOADER": "#FABRIC_LOADER",
         "LOOM_FORGE_EXT": "",
@@ -84,6 +88,7 @@
       ],
       "tokens": {
         "MINECRAFT": "1.17.1",
+        "JAVA_VERSION": "#JAVA_16",
         "COMPILE_JAVA": "#COMPILE_JAVA_16",
         "MCMETA_FORMAT": "7",
         "JEI_MAJOR": "8",
@@ -106,6 +111,7 @@
       ],
       "tokens": {
         "MINECRAFT": "1.17.1",
+        "JAVA_VERSION": "#JAVA_16",
         "COMPILE_JAVA": "#COMPILE_JAVA_16_ARCH",
         "FABRIC_LOADER": "#FABRIC_LOADER",
         "LOOM_FORGE_EXT": "",

@@ -1,12 +1,9 @@
 plugins {
-    id 'dev.architectury.loom' version '0.10.0-SNAPSHOT'
-    id 'maven-publish'
+    id "dev.architectury.loom" version "0.10.0-SNAPSHOT"
+    id "maven-publish"
 }
 
-// when using loom 0.10.0 with minecraft 1.16,
-// be sure to set this (and other references to Java 16)
-// to Java 8, obviously
-sourceCompatibility = targetCompatibility = JavaVersion.VERSION_16
+sourceCompatibility = targetCompatibility = JavaVersion.@JAVA_VERSION@
 
 archivesBaseName = project.archives_base_name
 version = project.mod_version
