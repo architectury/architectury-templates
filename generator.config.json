@@ -2,10 +2,13 @@
   "global_tokens": {
     "COMPILE_JAVA_8": "\n    // The Minecraft launcher currently installs Java 8 for users, so your mod probably wants to target Java 8 too\n    // JDK 9 introduced a new way of specifying this that will make sure no newer classes or methods are used.\n    // We'll use that if it's available, but otherwise we'll use the older option.\n    def targetVersion = 8\n    if (JavaVersion.current().isJava9Compatible()) {\n        options.release = targetVersion\n    }",
     "COMPILE_JAVA_16": "    options.release = 16",
+    "COMPILE_JAVA_17": "    options.release = 17",
     "COMPILE_JAVA_8_ARCH": "\n        // The Minecraft launcher currently installs Java 8 for users, so your mod probably wants to target Java 8 too\n        // JDK 9 introduced a new way of specifying this that will make sure no newer classes or methods are used.\n        // We'll use that if it's available, but otherwise we'll use the older option.\n        def targetVersion = 8\n        if (JavaVersion.current().isJava9Compatible()) {\n            options.release = targetVersion\n        }",
     "COMPILE_JAVA_16_ARCH": "        options.release = 16",
+    "COMPILE_JAVA_17_ARCH": "        options.release = 17",
     "JAVA_8": "VERSION_8",
     "JAVA_16": "VERSION_16",
+    "JAVA_17": "VERSION_17",
     "FABRIC_LOADER": {
       "filter": ".*",
       "pom": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/maven-metadata.xml"
@@ -31,7 +34,8 @@
           "filter": "1\\.16\\.5-.*",
           "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
         },
-        "FORGE_LOADER_MAJOR": "36"
+        "FORGE_LOADER_MAJOR": "36",
+        "MIXIN_COMPAT_LEVEL": "JAVA_8"
       }
     },
     "1.16-architectury": {
@@ -100,7 +104,8 @@
           "filter": "1\\.17\\.1-.*",
           "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
         },
-        "FORGE_LOADER_MAJOR": "37"
+        "FORGE_LOADER_MAJOR": "37",
+        "MIXIN_COMPAT_LEVEL": "JAVA_16"
       }
     },
     "1.17-architectury": {
@@ -148,6 +153,63 @@
       "tokens": {
         "MIXIN_COMPAT_LEVEL": "JAVA_16",
         "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+      }
+    },
+    "1.18-forge": {
+      "description": "1.18 Forge-Only Template",
+      "templates": [
+        "templates/forge"
+      ],
+      "tokens": {
+        "MINECRAFT": "1.18",
+        "JAVA_VERSION": "#JAVA_17",
+        "COMPILE_JAVA": "#COMPILE_JAVA_17",
+        "MCMETA_FORMAT": "8",
+        "JEI_MAJOR": "9s",
+        "YARN_MAPPINGS": {
+          "filter": "1\\.18\\+build\\..*",
+          "pom": "https://maven.fabricmc.net/net/fabricmc/yarn/maven-metadata.xml"
+        },
+        "FORGE": {
+          "filter": "1\\.18-.*",
+          "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
+        },
+        "FORGE_LOADER_MAJOR": "38",
+        "MIXIN_COMPAT_LEVEL": "JAVA_16"
+      }
+    },
+    "1.18-architectury": {
+      "description": "1.18 Multi-Loader Template",
+      "templates": [
+        "templates/architectury",
+        "templates/api_new"
+      ],
+      "tokens": {
+        "MINECRAFT": "1.18",
+        "JAVA_VERSION": "#JAVA_17",
+        "COMPILE_JAVA": "#COMPILE_JAVA_17_ARCH",
+        "FABRIC_LOADER": "#FABRIC_LOADER",
+        "LOOM_FORGE_EXT": "",
+        "MCMETA_FORMAT": "8",
+        "ARCHITECTURY_GROUP": "dev.architectury",
+        "ARCHITECTURY_PACKAGE": "dev.architectury",
+        "ARCHITECTURY_API":  {
+          "filter": "3\\..*",
+          "pom": "https://maven.architectury.dev/dev/architectury/architectury/maven-metadata.xml"
+        },
+        "YARN_MAPPINGS": {
+          "filter": "1\\.18\\+build\\..*",
+          "pom": "https://maven.fabricmc.net/net/fabricmc/yarn/maven-metadata.xml"
+        },
+        "FABRIC_API": {
+          "filter": ".*\\+1\\.18",
+          "pom": "https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-api/maven-metadata.xml"
+        },
+        "FORGE": {
+          "filter": "1\\.18-.*",
+          "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
+        },
+        "FORGE_LOADER_MAJOR": "38"
       }
     }
   }

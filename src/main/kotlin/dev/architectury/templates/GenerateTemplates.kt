@@ -88,7 +88,7 @@ fun transformTokens(config: TemplateConfig, entry: TemplateEntry, cache: Mutable
 }
 
 private val String.isTextFile: Boolean
-    get() = listOf(".txt", ".gradle", ".java", ".kt", ".kts", ".gradle", ".groovy", ".properties", ".json").any { ext ->
+    get() = listOf(".txt", ".gradle", ".java", ".kt", ".kts", ".gradle", ".groovy", ".properties", ".json", ".mcmeta", ".cfg", ".toml", ".yaml").any { ext ->
         endsWith(ext)
     }
 
