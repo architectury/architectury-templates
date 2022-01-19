@@ -6,7 +6,7 @@
     "COMPILE_JAVA_8_ARCH": "\n        // The Minecraft launcher currently installs Java 8 for users, so your mod probably wants to target Java 8 too\n        // JDK 9 introduced a new way of specifying this that will make sure no newer classes or methods are used.\n        // We'll use that if it's available, but otherwise we'll use the older option.\n        def targetVersion = 8\n        if (JavaVersion.current().isJava9Compatible()) {\n            options.release = targetVersion\n        }",
     "COMPILE_JAVA_16_ARCH": "        options.release = 16",
     "COMPILE_JAVA_17_ARCH": "        options.release = 17",
-    "JAVA_8": "VERSION_8",
+    "JAVA_8": "VERSION_1_8",
     "JAVA_16": "VERSION_16",
     "JAVA_17": "VERSION_17",
     "FABRIC_LOADER": {
