@@ -69,7 +69,8 @@
           "filter": "1\\.16\\.5-.*",
           "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
         },
-        "FORGE_LOADER_MAJOR": "36"
+        "FORGE_LOADER_MAJOR": "36",
+        "MIXIN_FABRIC_BLOCK": ""
       }
     },
     "1.16-architectury-mixin": {
@@ -81,6 +82,7 @@
       ],
       "inherit_tokens": "1.16-architectury",
       "tokens": {
+        "MIXIN_FABRIC_BLOCK": "\n  \"mixins\": [\n    \"examplemod.mixins.json\",\n    \"examplemod-common.mixins.json\"\n  ],",
         "MIXIN_COMPAT_LEVEL": "JAVA_8",
         "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
       }
@@ -139,7 +141,8 @@
           "filter": "1\\.17\\.1-.*",
           "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
         },
-        "FORGE_LOADER_MAJOR": "37"
+        "FORGE_LOADER_MAJOR": "37",
+        "MIXIN_FABRIC_BLOCK": ""
       }
     },
     "1.17-architectury-mixin": {
@@ -151,41 +154,42 @@
       ],
       "inherit_tokens": "1.17-architectury",
       "tokens": {
+        "MIXIN_FABRIC_BLOCK": "\n  \"mixins\": [\n    \"examplemod.mixins.json\",\n    \"examplemod-common.mixins.json\"\n  ],",
         "MIXIN_COMPAT_LEVEL": "JAVA_16",
         "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
       }
     },
     "1.18-forge": {
-      "description": "1.18 Forge-Only Template",
+      "description": "1.18.1 Forge-Only Template",
       "templates": [
         "templates/forge"
       ],
       "tokens": {
-        "MINECRAFT": "1.18",
+        "MINECRAFT": "1.18.1",
         "JAVA_VERSION": "#JAVA_17",
         "COMPILE_JAVA": "#COMPILE_JAVA_17",
         "MCMETA_FORMAT": "8",
-        "JEI_MAJOR": "9s",
+        "JEI_MAJOR": "9",
         "YARN_MAPPINGS": {
-          "filter": "1\\.18\\+build\\..*",
+          "filter": "1\\.18\\.1\\+build\\..*",
           "pom": "https://maven.fabricmc.net/net/fabricmc/yarn/maven-metadata.xml"
         },
         "FORGE": {
-          "filter": "1\\.18-.*",
+          "filter": "1\\.18\\.1-.*",
           "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
         },
-        "FORGE_LOADER_MAJOR": "38",
+        "FORGE_LOADER_MAJOR": "39",
         "MIXIN_COMPAT_LEVEL": "JAVA_16"
       }
     },
     "1.18-architectury": {
-      "description": "1.18 Multi-Loader Template",
+      "description": "1.18.1 Multi-Loader Template",
       "templates": [
         "templates/architectury",
         "templates/api_new"
       ],
       "tokens": {
-        "MINECRAFT": "1.18",
+        "MINECRAFT": "1.18.1",
         "JAVA_VERSION": "#JAVA_17",
         "COMPILE_JAVA": "#COMPILE_JAVA_17_ARCH",
         "FABRIC_LOADER": "#FABRIC_LOADER",
@@ -198,7 +202,7 @@
           "pom": "https://maven.architectury.dev/dev/architectury/architectury/maven-metadata.xml"
         },
         "YARN_MAPPINGS": {
-          "filter": "1\\.18\\+build\\..*",
+          "filter": "1\\.18\\.1\\+build\\..*",
           "pom": "https://maven.fabricmc.net/net/fabricmc/yarn/maven-metadata.xml"
         },
         "FABRIC_API": {
@@ -206,10 +210,25 @@
           "pom": "https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-api/maven-metadata.xml"
         },
         "FORGE": {
-          "filter": "1\\.18-.*",
+          "filter": "1\\.18\\.1-.*",
           "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
         },
-        "FORGE_LOADER_MAJOR": "38"
+        "FORGE_LOADER_MAJOR": "39",
+        "MIXIN_FABRIC_BLOCK": ""
+      }
+    },
+    "1.18-architectury-mixin": {
+      "description": "1.18.1 Multi-Loader Template with Mixins",
+      "templates": [
+        "templates/architectury",
+        "templates/api_new",
+        "templates/mixin"
+      ],
+      "inherit_tokens": "1.18-architectury",
+      "tokens": {
+        "MIXIN_FABRIC_BLOCK": "\n  \"mixins\": [\n    \"examplemod.mixins.json\",\n    \"examplemod-common.mixins.json\"\n  ],",
+        "MIXIN_COMPAT_LEVEL": "JAVA_16",
+        "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
       }
     }
   }

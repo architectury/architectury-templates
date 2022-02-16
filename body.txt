@@ -4,5 +4,7 @@ The following templates are offered in [Creative Commons Zero v1.0 Universal](ht
 
 Architectury API is added to the templates by default, there are instructions on how to remove them within the buildscripts, depending on the API is **not required** to use the Architectury toolchain.
 
+**Make sure** to do a find everywhere on `examplemod` and replace it with your own mod id.
+
 **Documentation:** [https://docs.architectury.dev/](https://docs.architectury.dev/)
 **Discord:** [https://discord.gg/C2RdJDpRBP](https://discord.gg/C2RdJDpRBP)

@@ -18,13 +18,10 @@
     "main": [
       "net.examplemod.fabric.ExampleModFabric"
     ]
-  },
+  },@MIXIN_FABRIC_BLOCK@
   "depends": {
     "fabric": "*",
     "minecraft": ">=@MINECRAFT@",
     "architectury": ">=@ARCHITECTURY_API@"
-  },
-  "suggests": {
-    "flamingo": "*"
   }
 }

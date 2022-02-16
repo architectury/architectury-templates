@@ -10,6 +10,10 @@ architectury {
     common()
 }
 
+loom {
+    accessWidenerPath = file("src/main/resources/examplemod.accesswidener")
+}
+
 publishing {
     publications {
         mavenCommon(MavenPublication) {
