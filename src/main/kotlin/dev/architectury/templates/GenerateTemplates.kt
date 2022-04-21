@@ -44,6 +44,11 @@ fun main() {
     }
     config.versions.forEach { (id, entry) ->
         val outputZip = outputPath.resolve("$id.zip")
+        val outputFolder = outputPath.resolve(id)
+        outputFolder.toFile().deleteRecursively()
+        println()
+        println()
+        println("Handling $id")
         val toTransform = transformTokens(config, entry, cache)
         ZipOutputStream(Files.newOutputStream(outputZip)).use { zipOutputStream ->
             val entries = mutableMapOf<String, ByteArray>()
@@ -51,10 +56,27 @@ fun main() {
                 Files.walk(templateDirPath).filter { Files.isRegularFile(it) }.forEach { path ->
                     val pathName = templateDirPath.relativize(path).toString()
                     if (pathName.isTextFile) {
-                        entries[pathName] = Files.readString(path).let {
-                            var out = it
+                        entries[pathName] = Files.readString(path).let { originalText ->
+                            var out = originalText
                             toTransform.forEach { (from, to) ->
                                 out = out.replace(from, to)
+                            }
+                            val matchedNotReplaced = "@([A-Z_]+)@".toRegex().findAll(out).toMutableList()
+                            matchedNotReplaced.removeIf { result ->
+                                val (token) = result.destructured
+                                if (token.startsWith("__")) {
+                                    println("Replacing ${result.value} with ")
+                                    out = out.replace(result.value, "")
+                                    true
+                                } else {
+                                    false
+                                }
+                            }
+                            if (matchedNotReplaced.isNotEmpty()) {
+                                System.err.println("Not replaced: $pathName")
+                                matchedNotReplaced.forEach {
+                                    System.err.println("\t${it.value}")
+                                }
                             }
                             out
                         }.encodeToByteArray()
@@ -66,6 +88,13 @@ fun main() {
             entries.forEach { (path, bytes) ->
                 zipOutputStream.putNextEntry(ZipEntry(path))
                 zipOutputStream.write(bytes)
+                val outsidePath = outputFolder.resolve(path)
+
+                if (outsidePath.parent != null) {
+                    Files.createDirectories(outsidePath.parent)
+                }
+
+                Files.write(outsidePath, bytes)
             }
         }
         githubRelease?.uploadAsset(outputZip.toFile(), "application/zip")
@@ -74,15 +103,25 @@ fun main() {
 
 fun transformTokens(config: TemplateConfig, entry: TemplateEntry, cache: MutableMap<String, String>): Map<String, String> {
     val map = mutableMapOf<String, String>()
-    entry.inherit_tokens?.let { config.versions[it]!!.tokens }?.forEach { (token, element) ->
-        val replacement = element.findReplacement(config, cache)
-        println("Replacing @$token@ with $replacement")
-        map["@$token@"] = replacement
+    val inherited = mutableSetOf<String>()
+
+    fun inherit(inheritToken: String) {
+        if (inherited.add(inheritToken)) {
+            val inheritConfig = config.versions[inheritToken]!!
+            inheritConfig.tokens.forEach { (token, element) ->
+                val replacement = element.findReplacement(config, cache)
+                map.putIfAbsent("@$token@", replacement)
+            }
+            inheritConfig.inherit_tokens.forEach { inherit(it) }
+        }
     }
+    entry.inherit_tokens.forEach { inherit(it) }
     entry.tokens.forEach { (token, element) ->
         val replacement = element.findReplacement(config, cache)
-        println("Replacing @$token@ with $replacement")
         map["@$token@"] = replacement
+    }
+    map.forEach { (from, to) ->
+        println("Replacing $from with $to")
     }
     return map
 }
@@ -125,7 +164,7 @@ data class TemplateConfig(
 data class TemplateEntry(
     val templates: List<String>,
     val description: String,
-    val inherit_tokens: String? = null,
+    val inherit_tokens: List<String> = emptyList(),
     val tokens: Map<String, JsonElement>,
 )
 
@@ -144,7 +183,7 @@ val String.versionNonNull: Version
 @JvmInline
 value class Version(val version: String) : Comparable<Version> {
     init {
-        require(version.matches("(\\d+(?:\\.\\d+)*)-?((?:.*)?)\\+?((?:.*)?)".toRegex())) { "Invalid version format" }
+        require(version.matches("(\\d+(?:\\.\\d+)*)-?((?:[^+]*)?)(?:\\+(.*))?".toRegex())) { "Invalid version format" }
     }
 
     data class VersionParts(
@@ -155,7 +194,7 @@ value class Version(val version: String) : Comparable<Version> {
 
     val parts: VersionParts
         get() {
-            return "(\\d+(?:\\.\\d+)*)-?((?:.*)?)\\+?((?:.*)?)".toRegex().matchEntire(version)!!.let {
+            return "(\\d+(?:\\.\\d+)*)-?((?:[^+]*)?)(?:\\+(.*))?".toRegex().matchEntire(version)!!.let {
                 val (version, snapshot, metadata) = it.destructured
                 VersionParts(version, snapshot, metadata)
             }

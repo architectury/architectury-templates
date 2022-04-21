@@ -8,7 +8,7 @@ pluginManagement {
 }
 
 include("common")
-include("fabric")
+@INCLUDE_FABRIC_OR_QUILT@
 include("forge")
 
 rootProject.name = "architectury-example-mod"
