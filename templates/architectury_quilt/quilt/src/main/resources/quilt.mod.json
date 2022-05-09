@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,@__MIXIN_FABRIC_BLOCK@
+  "schema_version": 1,@__MIXIN_QUILT_BLOCK@
   "quilt_loader": {
     "group": "${group}",
     "id": "examplemod",
