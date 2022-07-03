@@ -59,13 +59,6 @@ repositories {
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
-
-    // in this example, we need the following maven
-    // to satisfy our dependency for JEI.
-    maven {
-        name = "Progwml6 (Just Enough Items)"
-        url = "https://dvs1.progwml6.com/files/maven/"
-    }
 }
 
 dependencies {
@@ -95,9 +88,9 @@ dependencies {
     // compile against the JEI API but do not include it at runtime
     // don't worry about loom "not finding a forge mod" here,
     // JEI's api just doesn't have any class with an @Mod annotation
-    modCompileOnly "mezz.jei:jei-@MINECRAFT@:${jei_version}:api"
+    // modCompileOnly "mezz.jei:jei-@MINECRAFT@:${jei_version}:api"
     // at runtime, use the full JEI jar
-    modRuntimeOnly "mezz.jei:jei-@MINECRAFT@:${jei_version}"
+    // modRuntimeOnly "mezz.jei:jei-@MINECRAFT@:${jei_version}"
 }
 
 processResources {

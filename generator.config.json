@@ -38,7 +38,6 @@
                 "JAVA_VERSION": "#JAVA_8",
                 "COMPILE_JAVA": "#COMPILE_JAVA_8",
                 "MCMETA_FORMAT": "6",
-                "JEI_MAJOR": "7",
                 "YARN_MAPPINGS": {
                     "filter": "1\\.16\\.5\\+build\\..*",
                     "pom": "https://maven.fabricmc.net/net/fabricmc/yarn/maven-metadata.xml"
@@ -115,7 +114,6 @@
                 "JAVA_VERSION": "#JAVA_16",
                 "COMPILE_JAVA": "#COMPILE_JAVA_16",
                 "MCMETA_FORMAT": "7",
-                "JEI_MAJOR": "8",
                 "YARN_MAPPINGS": {
                     "filter": "1\\.17\\.1\\+build\\..*",
                     "pom": "https://maven.fabricmc.net/net/fabricmc/yarn/maven-metadata.xml"
@@ -192,7 +190,6 @@
                 "JAVA_VERSION": "#JAVA_17",
                 "COMPILE_JAVA": "#COMPILE_JAVA_17",
                 "MCMETA_FORMAT": "8",
-                "JEI_MAJOR": "9",
                 "YARN_MAPPINGS": {
                     "filter": "1\\.18\\.1\\+build\\..*",
                     "pom": "https://maven.fabricmc.net/net/fabricmc/yarn/maven-metadata.xml"
@@ -202,7 +199,7 @@
                     "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
                 },
                 "FORGE_LOADER_MAJOR": "39",
-                "MIXIN_COMPAT_LEVEL": "JAVA_16"
+                "MIXIN_COMPAT_LEVEL": "JAVA_17"
             }
         },
         "1.18.1-forge-fabric": {
@@ -253,7 +250,7 @@
             "inherit_tokens": ["1.18.1-forge-fabric"],
             "tokens": {
                 "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
-                "MIXIN_COMPAT_LEVEL": "JAVA_16",
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
                 "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
             }
         },
@@ -267,7 +264,6 @@
                 "JAVA_VERSION": "#JAVA_17",
                 "COMPILE_JAVA": "#COMPILE_JAVA_17",
                 "MCMETA_FORMAT": "8",
-                "JEI_MAJOR": "9",
                 "YARN_MAPPINGS": {
                     "filter": "1\\.18\\.2\\+build\\..*",
                     "pom": "https://maven.fabricmc.net/net/fabricmc/yarn/maven-metadata.xml"
@@ -277,7 +273,7 @@
                     "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
                 },
                 "FORGE_LOADER_MAJOR": "40",
-                "MIXIN_COMPAT_LEVEL": "JAVA_16"
+                "MIXIN_COMPAT_LEVEL": "JAVA_17"
             }
         },
         "1.18.2-forge-fabric": {
@@ -330,7 +326,7 @@
             "inherit_tokens": ["1.18.2-forge-fabric"],
             "tokens": {
                 "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
-                "MIXIN_COMPAT_LEVEL": "JAVA_16",
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
                 "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
             }
         },
@@ -370,7 +366,7 @@
             "inherit_tokens": ["1.18.2-forge-quilt"],
             "tokens": {
                 "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
-                "MIXIN_COMPAT_LEVEL": "JAVA_16",
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
                 "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
             }
         },
@@ -409,7 +405,7 @@
             "inherit_tokens": ["1.18.2-forge-fabric-quilt"],
             "tokens": {
                 "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
-                "MIXIN_COMPAT_LEVEL": "JAVA_16",
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
                 "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
             }
         },
@@ -453,7 +449,7 @@
             "tokens": {
                 "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
                 "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
-                "MIXIN_COMPAT_LEVEL": "JAVA_16",
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
                 "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
             }
         },
@@ -467,7 +463,6 @@
                 "JAVA_VERSION": "#JAVA_17",
                 "COMPILE_JAVA": "#COMPILE_JAVA_17",
                 "MCMETA_FORMAT": "9",
-                "JEI_MAJOR": "9",
                 "YARN_MAPPINGS": {
                     "filter": "1\\.19\\+build\\..*",
                     "pom": "https://maven.fabricmc.net/net/fabricmc/yarn/maven-metadata.xml"
@@ -477,7 +472,7 @@
                     "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
                 },
                 "FORGE_LOADER_MAJOR": "41",
-                "MIXIN_COMPAT_LEVEL": "JAVA_16"
+                "MIXIN_COMPAT_LEVEL": "JAVA_17"
             }
         },
         "1.19-forge-fabric": {
@@ -530,7 +525,130 @@
             "inherit_tokens": ["1.19-forge-fabric"],
             "tokens": {
                 "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
-                "MIXIN_COMPAT_LEVEL": "JAVA_16",
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
+                "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+            }
+        },
+        "1.19-forge-quilt": {
+            "description": "1.19 Forge-Quilt Template",
+            "templates": [
+                "templates/architectury",
+                "templates/architectury_quilt",
+                "templates/api_new"
+            ],
+            "inherit_tokens": ["1.19-forge-fabric"],
+            "tokens": {
+                "COMMON_MOD_LOADERS": "quilt,forge",
+                "INCLUDE_FABRIC_OR_QUILT": "include(\"quilt\")",
+                "__FABRIC_LOADER_PROP": "",
+                "__FABRIC_LOADER": "",
+                "__FABRIC_API_PROP": "",
+                "__FABRIC_API": "",
+                "__QUILT_LOADER_PROP": "#QUILT_LOADER_PROP",
+                "__QUILT_LOADER": "#QUILT_LOADER",
+                "__QUILT_FABRIC_API_PROP": "#QUILT_FABRIC_API_PROP",
+                "__QUILT_FABRIC_API": {
+                    "filter": ".*\\-1\\.19",
+                    "pom": "https://maven.quiltmc.org/repository/release/org/quiltmc/quilted-fabric-api/quilted-fabric-api/maven-metadata.xml"
+                }
+            }
+        },
+        "1.19-forge-quilt-mixin": {
+            "description": "1.19 Forge-Quilt Template with Mixins",
+            "templates": [
+                "templates/architectury",
+                "templates/architectury_quilt",
+                "templates/api_new",
+                "templates/mixin",
+                "templates/mixin_quilt"
+            ],
+            "inherit_tokens": ["1.19-forge-quilt"],
+            "tokens": {
+                "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
+                "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+            }
+        },
+        "1.19-forge-fabric-quilt": {
+            "description": "1.19 Forge-Fabric-Quilt Template",
+            "templates": [
+                "templates/architectury",
+                "templates/architectury_fabric",
+                "templates/architectury_quilt",
+                "templates/api_new"
+            ],
+            "inherit_tokens": ["1.19-forge-fabric"],
+            "tokens": {
+                "COMMON_MOD_LOADERS": "quilt,fabric,forge",
+                "INCLUDE_FABRIC_OR_QUILT": "include(\"fabric\")\ninclude(\"quilt\")",
+                "__QUILT_LOADER_PROP": "#QUILT_LOADER_PROP",
+                "__QUILT_LOADER": "#QUILT_LOADER",
+                "__QUILT_FABRIC_API_PROP": "#QUILT_FABRIC_API_PROP",
+                "__QUILT_FABRIC_API": {
+                    "filter": ".*\\-1\\.19",
+                    "pom": "https://maven.quiltmc.org/repository/release/org/quiltmc/quilted-fabric-api/quilted-fabric-api/maven-metadata.xml"
+                }
+            }
+        },
+        "1.19-forge-fabric-quilt-mixin": {
+            "description": "1.19 Forge-Fabric-Quilt Template with Mixins",
+            "templates": [
+                "templates/architectury",
+                "templates/architectury_fabric",
+                "templates/architectury_quilt",
+                "templates/api_new",
+                "templates/mixin",
+                "templates/mixin_fabric",
+                "templates/mixin_quilt"
+            ],
+            "inherit_tokens": ["1.19-forge-fabric-quilt"],
+            "tokens": {
+                "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
+                "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+            }
+        },
+        "1.19-forge-fabric-like": {
+            "description": "1.19 Forge-Fabric-Like Template",
+            "templates": [
+                "templates/architectury",
+                "templates/architectury_fabric",
+                "templates/architectury_quilt",
+                "templates/architectury_fabric_like",
+                "templates/api_new"
+            ],
+            "inherit_tokens": ["1.19-forge-fabric"],
+            "tokens": {
+                "COMMON_MOD_LOADERS": "quilt,fabric,forge",
+                "INCLUDE_FABRIC_OR_QUILT": "include(\"fabric-like\")\ninclude(\"fabric\")\ninclude(\"quilt\")",
+                "__FABRIC_ADD_FABRICLIKE": "#FABRIC_ADD_FABRICLIKE",
+                "__QUILT_ADD_FABRICLIKE": "#QUILT_ADD_FABRICLIKE",
+                "__QUILT_LOADER_PROP": "#QUILT_LOADER_PROP",
+                "__QUILT_LOADER": "#QUILT_LOADER",
+                "__QUILT_FABRIC_API_PROP": "#QUILT_FABRIC_API_PROP",
+                "__QUILT_FABRIC_API": {
+                    "filter": ".*\\-1\\.19",
+                    "pom": "https://maven.quiltmc.org/repository/release/org/quiltmc/quilted-fabric-api/quilted-fabric-api/maven-metadata.xml"
+                }
+            }
+        },
+        "1.19-forge-fabric-like-mixin": {
+            "description": "1.19 Forge-Fabric-Like Template with Mixins",
+            "templates": [
+                "templates/architectury",
+                "templates/architectury_fabric",
+                "templates/architectury_quilt",
+                "templates/architectury_fabric_like",
+                "templates/api_new",
+                "templates/mixin",
+                "templates/mixin_fabric",
+                "templates/mixin_quilt"
+            ],
+            "inherit_tokens": ["1.19-forge-fabric-like"],
+            "tokens": {
+                "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
+                "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
                 "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
             }
         }
