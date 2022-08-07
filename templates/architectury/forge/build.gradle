@@ -1,7 +1,7 @@
 plugins {
     id "com.github.johnrengelman.shadow" version "7.1.2"
 }
-@__LOOM_FORGE_EXT@
+
 architectury {
     platformSetupLoomIde()
     forge()
@@ -13,6 +13,8 @@ loom {
     forge {
         convertAccessWideners = true
         extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
+
+        @__LOOM_FORGE_EXT@
     }
 }
 
