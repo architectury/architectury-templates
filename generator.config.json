@@ -101,7 +101,7 @@
             "tokens": {
                 "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
                 "MIXIN_COMPAT_LEVEL": "JAVA_8",
-                "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+                "__LOOM_FORGE_EXT": "mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\""
             }
         },
         "1.17.1-forge": {
@@ -177,7 +177,7 @@
             "tokens": {
                 "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
                 "MIXIN_COMPAT_LEVEL": "JAVA_16",
-                "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+                "__LOOM_FORGE_EXT": "mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\""
             }
         },
         "1.18.1-forge": {
@@ -251,7 +251,7 @@
             "tokens": {
                 "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
                 "MIXIN_COMPAT_LEVEL": "JAVA_17",
-                "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+                "__LOOM_FORGE_EXT": "mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\""
             }
         },
         "1.18.2-forge": {
@@ -327,7 +327,7 @@
             "tokens": {
                 "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
                 "MIXIN_COMPAT_LEVEL": "JAVA_17",
-                "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+                "__LOOM_FORGE_EXT": "mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\""
             }
         },
         "1.18.2-forge-quilt": {
@@ -367,7 +367,7 @@
             "tokens": {
                 "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
                 "MIXIN_COMPAT_LEVEL": "JAVA_17",
-                "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+                "__LOOM_FORGE_EXT": "mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\""
             }
         },
         "1.18.2-forge-fabric-quilt": {
@@ -406,7 +406,7 @@
             "tokens": {
                 "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
                 "MIXIN_COMPAT_LEVEL": "JAVA_17",
-                "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+                "__LOOM_FORGE_EXT": "mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\""
             }
         },
         "1.18.2-forge-fabric-like": {
@@ -450,7 +450,7 @@
                 "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
                 "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
                 "MIXIN_COMPAT_LEVEL": "JAVA_17",
-                "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+                "__LOOM_FORGE_EXT": "mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\""
             }
         },
         "1.19-forge": {
@@ -526,7 +526,7 @@
             "tokens": {
                 "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
                 "MIXIN_COMPAT_LEVEL": "JAVA_17",
-                "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+                "__LOOM_FORGE_EXT": "mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\""
             }
         },
         "1.19-forge-quilt": {
@@ -566,7 +566,7 @@
             "tokens": {
                 "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
                 "MIXIN_COMPAT_LEVEL": "JAVA_17",
-                "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+                "__LOOM_FORGE_EXT": "mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\""
             }
         },
         "1.19-forge-fabric-quilt": {
@@ -605,7 +605,7 @@
             "tokens": {
                 "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
                 "MIXIN_COMPAT_LEVEL": "JAVA_17",
-                "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+                "__LOOM_FORGE_EXT": "mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\""
             }
         },
         "1.19-forge-fabric-like": {
@@ -649,7 +649,7 @@
                 "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
                 "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
                 "MIXIN_COMPAT_LEVEL": "JAVA_17",
-                "LOOM_FORGE_EXT": "loom {\n    forge {\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\"\n    }\n}\n"
+                "__LOOM_FORGE_EXT": "mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\""
             }
         }
     }
