@@ -12,9 +12,7 @@ loom {
 
     forge {
         convertAccessWideners = true
-        extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
-
-        @__LOOM_FORGE_EXT@
+        extraAccessWideners.add loom.accessWidenerPath.get().asFile.name@__LOOM_FORGE_EXT@
     }
 }
 
