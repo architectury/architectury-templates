@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "@MODID@",
   "version": "${version}",
   "name": "Example Mod",
   "description": "This is an example description! Tell everyone what your mod is about!",
@@ -12,11 +12,11 @@
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
   "license": "Insert License Here",
-  "icon": "assets/examplemod/icon.png",
+  "icon": "assets/@MODID@/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.examplemod.fabric.ExampleModFabric"
+      "@PACKAGE@.fabric.ExampleModFabric"
     ]
   },@__MIXIN_FABRIC_BLOCK@
   "depends": {

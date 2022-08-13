@@ -4,7 +4,7 @@ loaderVersion = "[@FORGE_LOADER_MAJOR@,)"
 license = "Insert License Here"
 
 [[mods]]
-modId = "examplemod"
+modId = "@MODID@"
 version = "${version}"
 displayName = "Example Mod"
 authors = "Me!"
@@ -13,21 +13,21 @@ This is an example description! Tell everyone what your mod is about!
 '''
 #logoFile = ""
 
-[[dependencies.examplemod]]
+[[dependencies.@MODID@]]
 modId = "forge"
 mandatory = true
 versionRange = "[@FORGE_LOADER_MAJOR@,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.@MODID@]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[@MINECRAFT@,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.@MODID@]]
 modId = "architectury"
 mandatory = true
 versionRange = "[@ARCHITECTURY_API@,)"

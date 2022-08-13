@@ -10,7 +10,7 @@ license = "All rights reserved" # Want to make your mod open source? Check out h
 # A list of mods - how many allowed here is determined by the individual mod loader
 
 [[mods]]
-modId = "examplemod"
+modId = "@MODID@"
 # The version number of the mod - unlike in the Forge MDK,
 # we'll use the processResources task to replace this for us
 version = "${version}"
@@ -38,7 +38,7 @@ Have I reached 280 characters yet?
 # An (optional) dependency for your mod. Though technically not required,
 # it's always helpful to add these to stop your mod from loading when something is missing
 # rather than erroring out later
-[[dependencies.examplemod]]
+[[dependencies.@MODID@]]
 modId = "forge"
 mandatory = true # do you **need** this mod to be able to launch?
 # A version range using interval notation.
@@ -48,7 +48,7 @@ ordering = "NONE" # Use this if you want your mod to be loaded specifically BEFO
 side = "BOTH" # Specify where this mod is required: can be BOTH, CLIENT or SERVER
 
 # And another dependency, use this if you want to require a certain Minecraft version.
-[[dependencies.examplemod]]
+[[dependencies.@MODID@]]
 modId = "minecraft"
 mandatory = true
 # See above for how to read this notation, this essentially means any

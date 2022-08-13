@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "@PACKAGE@.mixin.forge",
+  "compatibilityLevel": "@MIXIN_COMPAT_LEVEL@",
+  "client": [
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
