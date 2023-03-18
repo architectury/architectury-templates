@@ -320,9 +320,7 @@
                     "filter": "1\\.18\\.2-.*",
                     "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
                 },
-                "FORGE_LOADER_MAJOR": "40",
-                "FORGE_EXPLOSION_EVENT_PACKAGE": "net.minecraftforge.event.world",
-                "FORGE_EXPLOSION_EVENT_GET_LEVEL": "getWorld"
+                "FORGE_LOADER_MAJOR": "40"
             }
         },
         "1.18.2-forge-fabric-mixin": {
@@ -523,9 +521,7 @@
                     "filter": "1\\.19-.*",
                     "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
                 },
-                "FORGE_LOADER_MAJOR": "41",
-                "FORGE_EXPLOSION_EVENT_PACKAGE": "net.minecraftforge.event.world",
-                "FORGE_EXPLOSION_EVENT_GET_LEVEL": "getWorld"
+                "FORGE_LOADER_MAJOR": "41"
             }
         },
         "1.19-forge-fabric-mixin": {
@@ -726,9 +722,7 @@
                     "filter": "1\\.19\\.2-.*",
                     "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
                 },
-                "FORGE_LOADER_MAJOR": "43",
-                "FORGE_EXPLOSION_EVENT_PACKAGE": "net.minecraftforge.event.level",
-                "FORGE_EXPLOSION_EVENT_GET_LEVEL": "getLevel"
+                "FORGE_LOADER_MAJOR": "43"
             }
         },
         "1.19.2-forge-fabric-mixin": {
@@ -929,9 +923,7 @@
                     "filter": "1\\.19\\.3-.*",
                     "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
                 },
-                "FORGE_LOADER_MAJOR": "44",
-                "FORGE_EXPLOSION_EVENT_PACKAGE": "net.minecraftforge.event.level",
-                "FORGE_EXPLOSION_EVENT_GET_LEVEL": "getLevel"
+                "FORGE_LOADER_MAJOR": "44"
             }
         },
         "1.19.3-forge-fabric-mixin": {
@@ -1132,9 +1124,7 @@
                     "filter": "1\\.19\\.4-.*",
                     "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
                 },
-                "FORGE_LOADER_MAJOR": "45",
-                "FORGE_EXPLOSION_EVENT_PACKAGE": "net.minecraftforge.event.level",
-                "FORGE_EXPLOSION_EVENT_GET_LEVEL": "getLevel"
+                "FORGE_LOADER_MAJOR": "45"
             }
         },
         "1.19.4-forge-fabric-mixin": {
