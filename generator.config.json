@@ -48,7 +48,9 @@
                     "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
                 },
                 "FORGE_LOADER_MAJOR": "36",
-                "MIXIN_COMPAT_LEVEL": "JAVA_8"
+                "MIXIN_COMPAT_LEVEL": "JAVA_8",
+                "FORGE_EXPLOSION_EVENT_PACKAGE": "net.minecraftforge.event.world",
+                "FORGE_EXPLOSION_EVENT_GET_LEVEL": "getWorld"
             }
         },
         "1.16.5-forge-fabric": {
@@ -200,7 +202,9 @@
                     "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
                 },
                 "FORGE_LOADER_MAJOR": "39",
-                "MIXIN_COMPAT_LEVEL": "JAVA_17"
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
+                "FORGE_EXPLOSION_EVENT_PACKAGE": "net.minecraftforge.event.world",
+                "FORGE_EXPLOSION_EVENT_GET_LEVEL": "getWorld"
             }
         },
         "1.18.1-forge-fabric": {
