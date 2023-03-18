@@ -126,7 +126,9 @@
                     "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
                 },
                 "FORGE_LOADER_MAJOR": "37",
-                "MIXIN_COMPAT_LEVEL": "JAVA_16"
+                "MIXIN_COMPAT_LEVEL": "JAVA_16",
+                "FORGE_EXPLOSION_EVENT_PACKAGE": "net.minecraftforge.event.world",
+                "FORGE_EXPLOSION_EVENT_GET_LEVEL": "getWorld"
             }
         },
         "1.17.1-forge-fabric": {
