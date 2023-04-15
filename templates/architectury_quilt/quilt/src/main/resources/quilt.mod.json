@@ -2,7 +2,7 @@
   "schema_version": 1,@__MIXIN_QUILT_BLOCK@
   "quilt_loader": {
     "group": "${group}",
-    "id": "@MODID@",
+    "id": "examplemod",
     "version": "${version}",
     "name": "Example Mod",
     "description": "This is an example description! Tell everyone what your mod is about!",
@@ -11,12 +11,12 @@
       "sources": "https://github.com/architectury/architectury-templates"
     },
     "license": "Insert License Here",
-    "icon": "assets/@MODID@/icon.png",
+    "icon": "assets/examplemod/icon.png",
     "intermediate_mappings": "net.fabricmc:intermediary",
     "environment": "*",
     "entrypoints": {
       "init": [
-        "@PACKAGE@.quilt.ExampleModQuilt"
+        "net.examplemod.quilt.ExampleModQuilt"
       ]
     },
     "depends": [

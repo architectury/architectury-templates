@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "Resources for @MODID@",
+    "description": "Resources for examplemod",
     "pack_format": @MCMETA_FORMAT@,
     "_comment": "pack_format @MCMETA_FORMAT@ is the current format for Minecraft @MINECRAFT@. Be aware may have changed by the time you use this template!"
   }

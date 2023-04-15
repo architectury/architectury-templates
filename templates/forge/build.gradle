@@ -21,7 +21,7 @@ loom {
         // specify the mixin configs used in this mod
         // this will be added to the jar manifest as well!
         mixinConfigs = [
-                "@MODID@.mixins.json"
+                "examplemod.mixins.json"
         ]
 
         // missing access transformers?

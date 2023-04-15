@@ -22,8 +22,6 @@ task run(type: JavaExec, dependsOn: jar) {
     environment "PUBLISH", "true"
     environment "GITHUB_TOKEN", System.getenv("GITHUB_TOKEN")
     environment "GITHUB_REPOSITORY", System.getenv("GITHUB_REPOSITORY")
-    environment "PACKAGE", "net.examplemod"
-    environment "MODID", "examplemod"
     classpath configurations.runtimeClasspath.files + jar.archiveFile
 }
 
@@ -32,7 +30,5 @@ task runLocal(type: JavaExec, dependsOn: jar) {
     environment "CONFIG_PATH", file("generator.config.json").absolutePath
     environment "OUTPUT_PATH", file("build/templates").absolutePath
     environment "PUBLISH", "false"
-    environment "PACKAGE", "net.examplemod"
-    environment "MODID", "examplemod"
     classpath configurations.runtimeClasspath.files + jar.archiveFile
 }

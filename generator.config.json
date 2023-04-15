@@ -9,8 +9,8 @@
         "JAVA_8": "VERSION_1_8",
         "JAVA_16": "VERSION_16",
         "JAVA_17": "VERSION_17",
-        "MIXIN_FABRIC_BLOCK": "\n  \"mixins\": [\n    \"@MODID@.mixins.json\",\n    \"@MODID@-common.mixins.json\"\n  ],",
-        "MIXIN_QUILT_BLOCK": "\n  \"mixin\": [\n    \"@MODID@.mixins.json\",\n    \"@MODID@-common.mixins.json\"\n  ],",
+        "MIXIN_FABRIC_BLOCK": "\n  \"mixins\": [\n    \"examplemod.mixins.json\",\n    \"examplemod-common.mixins.json\"\n  ],",
+        "MIXIN_QUILT_BLOCK": "\n  \"mixin\": [\n    \"examplemod.mixins.json\",\n    \"examplemod-common.mixins.json\"\n  ],",
         "FABRIC_LOADER_PROP": "fabric_loader_version=",
         "FABRIC_LOADER": {
             "filter": ".*",
@@ -26,7 +26,7 @@
         "QUILT_FABRIC_API_PROP": "quilt_fabric_api_version=",
         "FABRIC_ADD_FABRICLIKE": "\n    common(project(path: \":fabric-like\", configuration: \"namedElements\")) { transitive false }\n    shadowCommon(project(path: \":fabric-like\", configuration: \"transformProductionFabric\")) { transitive false }",
         "QUILT_ADD_FABRICLIKE": "\n    common(project(path: \":fabric-like\", configuration: \"namedElements\")) { transitive false }\n    shadowCommon(project(path: \":fabric-like\", configuration: \"transformProductionQuilt\")) { transitive false }",
-        "LOOM_FORGE_EXT": "\n\n        mixinConfig \"@MODID@-common.mixins.json\"\n        mixinConfig \"@MODID@.mixins.json\""
+        "LOOM_FORGE_EXT": "\n\n        mixinConfig \"examplemod-common.mixins.json\"\n        mixinConfig \"examplemod.mixins.json\""
     },
     "versions": {
         "1.16.5-forge": {

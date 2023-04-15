@@ -50,25 +50,38 @@ fun main() {
         println()
         println("Handling $id")
         val toTransform = transformTokens(config, entry, cache)
-        val replacer = createReplacer(toTransform)
         ZipOutputStream(Files.newOutputStream(outputZip)).use { zipOutputStream ->
             val entries = mutableMapOf<String, ByteArray>()
             entry.templates.map { Paths.get(it) }.forEach { templateDirPath ->
                 Files.walk(templateDirPath).filter { Files.isRegularFile(it) }.forEach { path ->
                     val pathName = templateDirPath.relativize(path).toString()
                     if (pathName.isTextFile) {
-                        entries[replacer(pathName).first] = Files.readString(path).let { originalText ->
-                            val (newText, matchedNotReplaced) = replacer(originalText)
+                        entries[pathName] = Files.readString(path).let { originalText ->
+                            var out = originalText
+                            toTransform.forEach { (from, to) ->
+                                out = out.replace(from, to)
+                            }
+                            val matchedNotReplaced = "@([A-Z_]+)@".toRegex().findAll(out).toMutableList()
+                            matchedNotReplaced.removeIf { result ->
+                                val (token) = result.destructured
+                                if (token.startsWith("__")) {
+                                    println("Replacing ${result.value} with ")
+                                    out = out.replace(result.value, "")
+                                    true
+                                } else {
+                                    false
+                                }
+                            }
                             if (matchedNotReplaced.isNotEmpty()) {
                                 System.err.println("Not replaced: $pathName")
                                 matchedNotReplaced.forEach {
-                                    System.err.println("\t${it}")
+                                    System.err.println("\t${it.value}")
                                 }
                             }
-                            newText
+                            out
                         }.encodeToByteArray()
                     } else {
-                        entries[replacer(pathName).first] = Files.readAllBytes(path)
+                        entries[pathName] = Files.readAllBytes(path)
                     }
                 }
             }
@@ -88,31 +101,9 @@ fun main() {
     }
 }
 
-fun createReplacer(toTransform: Map<String, String>): (String) -> Pair<String, List<String>> = { str ->
-    var out = str
-    toTransform.forEach { (from, to) ->
-        out = out.replace(from, to)
-    }
-    val matchedNotReplaced = "@([A-Z_]+)@".toRegex().findAll(out).toMutableList()
-    matchedNotReplaced.removeIf { result ->
-        val (token) = result.destructured
-        if (token.startsWith("__")) {
-            println("Replacing ${result.value} with ")
-            out = out.replace(result.value, "")
-            true
-        } else {
-            false
-        }
-    }
-    out to matchedNotReplaced.map { it.value }
-}
-
 fun transformTokens(config: TemplateConfig, entry: TemplateEntry, cache: MutableMap<String, String>): Map<String, String> {
     val map = mutableMapOf<String, String>()
     val inherited = mutableSetOf<String>()
-
-    map["@PACKAGE@"] = System.getenv("PACKAGE")
-    map["@MODID@"] = System.getenv("MODID")
 
     fun inherit(inheritToken: String) {
         if (inherited.add(inheritToken)) {
@@ -124,16 +115,10 @@ fun transformTokens(config: TemplateConfig, entry: TemplateEntry, cache: Mutable
             inheritConfig.inherit_tokens.forEach { inherit(it) }
         }
     }
-    
     entry.inherit_tokens.forEach { inherit(it) }
     entry.tokens.forEach { (token, element) ->
         val replacement = element.findReplacement(config, cache)
         map["@$token@"] = replacement
-    }
-    map.toMutableMap().forEach { (key, value) ->
-        map.entries.forEach { entry ->
-            entry.setValue(entry.value.replace(key, value))
-        }
     }
     map.forEach { (from, to) ->
         println("Replacing $from with $to")
