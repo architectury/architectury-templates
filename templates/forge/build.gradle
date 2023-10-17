@@ -3,11 +3,16 @@ plugins {
     id "maven-publish"
 }
 
-sourceCompatibility = targetCompatibility = JavaVersion.@JAVA_VERSION@
+base {
+    archivesName = project.archives_base_name
+}
 
-archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
+
+java {
+    sourceCompatibility = targetCompatibility = JavaVersion.@JAVA_VERSION@
+}
 
 loom {
     // use this if you are using the official mojang mappings
