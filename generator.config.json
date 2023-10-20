@@ -58,7 +58,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_fabric",
-                "templates/api_old"
+                "templates/api_1_16"
             ],
             "tokens": {
                 "MINECRAFT": "1.16.5",
@@ -96,7 +96,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_fabric",
-                "templates/api_old",
+                "templates/api_1_16",
                 "templates/mixin",
                 "templates/mixin_fabric"
             ],
@@ -136,7 +136,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_fabric",
-                "templates/api_new"
+                "templates/api_1_17"
             ],
             "tokens": {
                 "MINECRAFT": "1.17.1",
@@ -174,7 +174,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_fabric",
-                "templates/api_new",
+                "templates/api_1_17",
                 "templates/mixin",
                 "templates/mixin_fabric"
             ],
@@ -213,7 +213,7 @@
             "description": "1.18.1 Forge-Fabric Template",
             "templates": [
                 "templates/architectury",
-                "templates/api_new"
+                "templates/api_1_17"
             ],
             "tokens": {
                 "MINECRAFT": "1.18.1",
@@ -250,7 +250,7 @@
             "description": "1.18.1 Forge-Fabric Template with Mixins",
             "templates": [
                 "templates/architectury",
-                "templates/api_new",
+                "templates/api_1_17",
                 "templates/mixin",
                 "templates/mixin_fabric"
             ],
@@ -290,7 +290,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_fabric",
-                "templates/api_new"
+                "templates/api_1_17"
             ],
             "tokens": {
                 "MINECRAFT": "1.18.2",
@@ -328,7 +328,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_fabric",
-                "templates/api_new",
+                "templates/api_1_17",
                 "templates/mixin",
                 "templates/mixin_fabric"
             ],
@@ -344,7 +344,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_quilt",
-                "templates/api_new"
+                "templates/api_1_17"
             ],
             "inherit_tokens": ["1.18.2-forge-fabric"],
             "tokens": {
@@ -368,7 +368,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_quilt",
-                "templates/api_new",
+                "templates/api_1_17",
                 "templates/mixin",
                 "templates/mixin_quilt"
             ],
@@ -385,7 +385,7 @@
                 "templates/architectury",
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
-                "templates/api_new"
+                "templates/api_1_17"
             ],
             "inherit_tokens": ["1.18.2-forge-fabric"],
             "tokens": {
@@ -406,7 +406,7 @@
                 "templates/architectury",
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
-                "templates/api_new",
+                "templates/api_1_17",
                 "templates/mixin",
                 "templates/mixin_fabric",
                 "templates/mixin_quilt"
@@ -425,7 +425,7 @@
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
                 "templates/architectury_fabric_like",
-                "templates/api_new"
+                "templates/api_1_17"
             ],
             "inherit_tokens": ["1.18.2-forge-fabric"],
             "tokens": {
@@ -449,7 +449,7 @@
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
                 "templates/architectury_fabric_like",
-                "templates/api_new",
+                "templates/api_1_17",
                 "templates/mixin",
                 "templates/mixin_fabric",
                 "templates/mixin_quilt"
@@ -491,7 +491,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_fabric",
-                "templates/api_new"
+                "templates/api_1_17"
             ],
             "tokens": {
                 "MINECRAFT": "1.19",
@@ -529,7 +529,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_fabric",
-                "templates/api_new",
+                "templates/api_1_17",
                 "templates/mixin",
                 "templates/mixin_fabric"
             ],
@@ -545,7 +545,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_quilt",
-                "templates/api_new"
+                "templates/api_1_17"
             ],
             "inherit_tokens": ["1.19-forge-fabric"],
             "tokens": {
@@ -569,7 +569,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_quilt",
-                "templates/api_new",
+                "templates/api_1_17",
                 "templates/mixin",
                 "templates/mixin_quilt"
             ],
@@ -586,7 +586,7 @@
                 "templates/architectury",
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
-                "templates/api_new"
+                "templates/api_1_17"
             ],
             "inherit_tokens": ["1.19-forge-fabric"],
             "tokens": {
@@ -607,7 +607,7 @@
                 "templates/architectury",
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
-                "templates/api_new",
+                "templates/api_1_17",
                 "templates/mixin",
                 "templates/mixin_fabric",
                 "templates/mixin_quilt"
@@ -626,7 +626,7 @@
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
                 "templates/architectury_fabric_like",
-                "templates/api_new"
+                "templates/api_1_17"
             ],
             "inherit_tokens": ["1.19-forge-fabric"],
             "tokens": {
@@ -650,7 +650,7 @@
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
                 "templates/architectury_fabric_like",
-                "templates/api_new",
+                "templates/api_1_17",
                 "templates/mixin",
                 "templates/mixin_fabric",
                 "templates/mixin_quilt"
@@ -692,7 +692,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_fabric",
-                "templates/api_new"
+                "templates/api_1_17"
             ],
             "tokens": {
                 "MINECRAFT": "1.19.2",
@@ -730,7 +730,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_fabric",
-                "templates/api_new",
+                "templates/api_1_17",
                 "templates/mixin",
                 "templates/mixin_fabric"
             ],
@@ -746,7 +746,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_quilt",
-                "templates/api_new"
+                "templates/api_1_17"
             ],
             "inherit_tokens": ["1.19.2-forge-fabric"],
             "tokens": {
@@ -770,7 +770,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_quilt",
-                "templates/api_new",
+                "templates/api_1_17",
                 "templates/mixin",
                 "templates/mixin_quilt"
             ],
@@ -787,7 +787,7 @@
                 "templates/architectury",
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
-                "templates/api_new"
+                "templates/api_1_17"
             ],
             "inherit_tokens": ["1.19.2-forge-fabric"],
             "tokens": {
@@ -808,7 +808,7 @@
                 "templates/architectury",
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
-                "templates/api_new",
+                "templates/api_1_17",
                 "templates/mixin",
                 "templates/mixin_fabric",
                 "templates/mixin_quilt"
@@ -827,7 +827,7 @@
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
                 "templates/architectury_fabric_like",
-                "templates/api_new"
+                "templates/api_1_17"
             ],
             "inherit_tokens": ["1.19.2-forge-fabric"],
             "tokens": {
@@ -851,7 +851,7 @@
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
                 "templates/architectury_fabric_like",
-                "templates/api_new",
+                "templates/api_1_17",
                 "templates/mixin",
                 "templates/mixin_fabric",
                 "templates/mixin_quilt"
@@ -893,7 +893,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_fabric",
-                "templates/api_new"
+                "templates/api_1_19_3"
             ],
             "tokens": {
                 "MINECRAFT": "1.19.3",
@@ -931,7 +931,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_fabric",
-                "templates/api_new",
+                "templates/api_1_19_3",
                 "templates/mixin",
                 "templates/mixin_fabric"
             ],
@@ -947,7 +947,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_quilt",
-                "templates/api_new"
+                "templates/api_1_19_3"
             ],
             "inherit_tokens": ["1.19.3-forge-fabric"],
             "tokens": {
@@ -971,7 +971,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_quilt",
-                "templates/api_new",
+                "templates/api_1_19_3",
                 "templates/mixin",
                 "templates/mixin_quilt"
             ],
@@ -988,7 +988,7 @@
                 "templates/architectury",
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
-                "templates/api_new"
+                "templates/api_1_19_3"
             ],
             "inherit_tokens": ["1.19.3-forge-fabric"],
             "tokens": {
@@ -1009,7 +1009,7 @@
                 "templates/architectury",
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
-                "templates/api_new",
+                "templates/api_1_19_3",
                 "templates/mixin",
                 "templates/mixin_fabric",
                 "templates/mixin_quilt"
@@ -1028,7 +1028,7 @@
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
                 "templates/architectury_fabric_like",
-                "templates/api_new"
+                "templates/api_1_19_3"
             ],
             "inherit_tokens": ["1.19.3-forge-fabric"],
             "tokens": {
@@ -1052,7 +1052,7 @@
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
                 "templates/architectury_fabric_like",
-                "templates/api_new",
+                "templates/api_1_19_3",
                 "templates/mixin",
                 "templates/mixin_fabric",
                 "templates/mixin_quilt"
@@ -1094,7 +1094,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_fabric",
-                "templates/api_new"
+                "templates/api_1_19_3"
             ],
             "tokens": {
                 "MINECRAFT": "1.19.4",
@@ -1132,7 +1132,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_fabric",
-                "templates/api_new",
+                "templates/api_1_19_3",
                 "templates/mixin",
                 "templates/mixin_fabric"
             ],
@@ -1148,7 +1148,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_quilt",
-                "templates/api_new"
+                "templates/api_1_19_3"
             ],
             "inherit_tokens": ["1.19.4-forge-fabric"],
             "tokens": {
@@ -1172,7 +1172,7 @@
             "templates": [
                 "templates/architectury",
                 "templates/architectury_quilt",
-                "templates/api_new",
+                "templates/api_1_19_3",
                 "templates/mixin",
                 "templates/mixin_quilt"
             ],
@@ -1189,7 +1189,7 @@
                 "templates/architectury",
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
-                "templates/api_new"
+                "templates/api_1_19_3"
             ],
             "inherit_tokens": ["1.19.4-forge-fabric"],
             "tokens": {
@@ -1210,7 +1210,7 @@
                 "templates/architectury",
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
-                "templates/api_new",
+                "templates/api_1_19_3",
                 "templates/mixin",
                 "templates/mixin_fabric",
                 "templates/mixin_quilt"
@@ -1229,7 +1229,7 @@
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
                 "templates/architectury_fabric_like",
-                "templates/api_new"
+                "templates/api_1_19_3"
             ],
             "inherit_tokens": ["1.19.4-forge-fabric"],
             "tokens": {
@@ -1253,12 +1253,213 @@
                 "templates/architectury_fabric",
                 "templates/architectury_quilt",
                 "templates/architectury_fabric_like",
-                "templates/api_new",
+                "templates/api_1_19_3",
                 "templates/mixin",
                 "templates/mixin_fabric",
                 "templates/mixin_quilt"
             ],
             "inherit_tokens": ["1.19.4-forge-fabric-like"],
+            "tokens": {
+                "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
+                "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
+                "__LOOM_FORGE_EXT": "#LOOM_FORGE_EXT"
+            }
+        },
+        "1.20.1-forge": {
+            "description": "1.20.1 Forge Template",
+            "templates": [
+                "templates/forge"
+            ],
+            "tokens": {
+                "MINECRAFT": "1.20.1",
+                "JAVA_VERSION": "#JAVA_17",
+                "COMPILE_JAVA": "#COMPILE_JAVA_17",
+                "MCMETA_FORMAT": "15",
+                "YARN_MAPPINGS": {
+                    "filter": "1\\.20\\.1\\+build\\..*",
+                    "pom": "https://maven.fabricmc.net/net/fabricmc/yarn/maven-metadata.xml"
+                },
+                "FORGE": {
+                    "filter": "1\\.20\\.1-.*",
+                    "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
+                },
+                "FORGE_LOADER_MAJOR": "47",
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
+                "FORGE_EXPLOSION_EVENT_PACKAGE": "net.minecraftforge.event.level",
+                "FORGE_EXPLOSION_EVENT_GET_LEVEL": "getLevel"
+            }
+        },
+        "1.20.1-forge-fabric": {
+            "description": "1.20.1 Forge-Fabric Template",
+            "templates": [
+                "templates/architectury",
+                "templates/architectury_fabric",
+                "templates/api_1_20"
+            ],
+            "tokens": {
+                "MINECRAFT": "1.20.1",
+                "COMMON_MOD_LOADERS": "fabric,forge",
+                "INCLUDE_FABRIC_OR_QUILT": "include(\"fabric\")",
+                "JAVA_VERSION": "#JAVA_17",
+                "COMPILE_JAVA": "#COMPILE_JAVA_17_ARCH",
+                "__FABRIC_LOADER": "#FABRIC_LOADER",
+                "__FABRIC_LOADER_PROP": "#FABRIC_LOADER_PROP",
+                "MCMETA_FORMAT": "15",
+                "ARCHITECTURY_GROUP": "dev.architectury",
+                "ARCHITECTURY_PACKAGE": "dev.architectury",
+                "ARCHITECTURY_API": {
+                    "filter": "9\\..*",
+                    "pom": "https://maven.architectury.dev/dev/architectury/architectury/maven-metadata.xml"
+                },
+                "YARN_MAPPINGS": {
+                    "filter": "1\\.20\\.1\\+build\\..*",
+                    "pom": "https://maven.fabricmc.net/net/fabricmc/yarn/maven-metadata.xml"
+                },
+                "__FABRIC_API": {
+                    "filter": ".*\\+1\\.20\\.1",
+                    "pom": "https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-api/maven-metadata.xml"
+                },
+                "__FABRIC_API_PROP": "#FABRIC_API_PROP",
+                "FORGE": {
+                    "filter": "1\\.20\\.1-.*",
+                    "pom": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml"
+                },
+                "FORGE_LOADER_MAJOR": "47"
+            }
+        },
+        "1.20.1-forge-fabric-mixin": {
+            "description": "1.20.1 Forge-Fabric Template with Mixins",
+            "templates": [
+                "templates/architectury",
+                "templates/architectury_fabric",
+                "templates/api_1_20",
+                "templates/mixin",
+                "templates/mixin_fabric"
+            ],
+            "inherit_tokens": ["1.20.1-forge-fabric"],
+            "tokens": {
+                "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
+                "__LOOM_FORGE_EXT": "#LOOM_FORGE_EXT"
+            }
+        },
+        "1.20.1-forge-quilt": {
+            "description": "1.20.1 Forge-Quilt Template",
+            "templates": [
+                "templates/architectury",
+                "templates/architectury_quilt",
+                "templates/api_1_20"
+            ],
+            "inherit_tokens": ["1.20.1-forge-fabric"],
+            "tokens": {
+                "COMMON_MOD_LOADERS": "quilt,forge",
+                "INCLUDE_FABRIC_OR_QUILT": "include(\"quilt\")",
+                "__FABRIC_LOADER_PROP": "",
+                "__FABRIC_LOADER": "",
+                "__FABRIC_API_PROP": "",
+                "__FABRIC_API": "",
+                "__QUILT_LOADER_PROP": "#QUILT_LOADER_PROP",
+                "__QUILT_LOADER": "#QUILT_LOADER",
+                "__QUILT_FABRIC_API_PROP": "#QUILT_FABRIC_API_PROP",
+                "__QUILT_FABRIC_API": {
+                    "filter": ".*\\-1\\.20\\.1",
+                    "pom": "https://maven.quiltmc.org/repository/release/org/quiltmc/quilted-fabric-api/quilted-fabric-api/maven-metadata.xml"
+                }
+            }
+        },
+        "1.20.1-forge-quilt-mixin": {
+            "description": "1.20.1 Forge-Quilt Template with Mixins",
+            "templates": [
+                "templates/architectury",
+                "templates/architectury_quilt",
+                "templates/api_1_20",
+                "templates/mixin",
+                "templates/mixin_quilt"
+            ],
+            "inherit_tokens": ["1.20.1-forge-quilt"],
+            "tokens": {
+                "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
+                "__LOOM_FORGE_EXT": "#LOOM_FORGE_EXT"
+            }
+        },
+        "1.20.1-forge-fabric-quilt": {
+            "description": "1.20.1 Forge-Fabric-Quilt Template",
+            "templates": [
+                "templates/architectury",
+                "templates/architectury_fabric",
+                "templates/architectury_quilt",
+                "templates/api_1_20"
+            ],
+            "inherit_tokens": ["1.20.1-forge-fabric"],
+            "tokens": {
+                "COMMON_MOD_LOADERS": "quilt,fabric,forge",
+                "INCLUDE_FABRIC_OR_QUILT": "include(\"fabric\")\ninclude(\"quilt\")",
+                "__QUILT_LOADER_PROP": "#QUILT_LOADER_PROP",
+                "__QUILT_LOADER": "#QUILT_LOADER",
+                "__QUILT_FABRIC_API_PROP": "#QUILT_FABRIC_API_PROP",
+                "__QUILT_FABRIC_API": {
+                    "filter": ".*\\-1\\.20\\.1",
+                    "pom": "https://maven.quiltmc.org/repository/release/org/quiltmc/quilted-fabric-api/quilted-fabric-api/maven-metadata.xml"
+                }
+            }
+        },
+        "1.20.1-forge-fabric-quilt-mixin": {
+            "description": "1.20.1 Forge-Fabric-Quilt Template with Mixins",
+            "templates": [
+                "templates/architectury",
+                "templates/architectury_fabric",
+                "templates/architectury_quilt",
+                "templates/api_1_20",
+                "templates/mixin",
+                "templates/mixin_fabric",
+                "templates/mixin_quilt"
+            ],
+            "inherit_tokens": ["1.20.1-forge-fabric-quilt"],
+            "tokens": {
+                "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
+                "MIXIN_COMPAT_LEVEL": "JAVA_17",
+                "__LOOM_FORGE_EXT": "#LOOM_FORGE_EXT"
+            }
+        },
+        "1.20.1-forge-fabric-like": {
+            "description": "1.20.1 Forge-Fabric-Like Template",
+            "templates": [
+                "templates/architectury",
+                "templates/architectury_fabric",
+                "templates/architectury_quilt",
+                "templates/architectury_fabric_like",
+                "templates/api_1_20"
+            ],
+            "inherit_tokens": ["1.20.1-forge-fabric"],
+            "tokens": {
+                "COMMON_MOD_LOADERS": "quilt,fabric,forge",
+                "INCLUDE_FABRIC_OR_QUILT": "include(\"fabric-like\")\ninclude(\"fabric\")\ninclude(\"quilt\")",
+                "__FABRIC_ADD_FABRICLIKE": "#FABRIC_ADD_FABRICLIKE",
+                "__QUILT_ADD_FABRICLIKE": "#QUILT_ADD_FABRICLIKE",
+                "__QUILT_LOADER_PROP": "#QUILT_LOADER_PROP",
+                "__QUILT_LOADER": "#QUILT_LOADER",
+                "__QUILT_FABRIC_API_PROP": "#QUILT_FABRIC_API_PROP",
+                "__QUILT_FABRIC_API": {
+                    "filter": ".*\\-1\\.20\\.1",
+                    "pom": "https://maven.quiltmc.org/repository/release/org/quiltmc/quilted-fabric-api/quilted-fabric-api/maven-metadata.xml"
+                }
+            }
+        },
+        "1.20.1-forge-fabric-like-mixin": {
+            "description": "1.20.1 Forge-Fabric-Like Template with Mixins",
+            "templates": [
+                "templates/architectury",
+                "templates/architectury_fabric",
+                "templates/architectury_quilt",
+                "templates/architectury_fabric_like",
+                "templates/api_1_20",
+                "templates/mixin",
+                "templates/mixin_fabric",
+                "templates/mixin_quilt"
+            ],
+            "inherit_tokens": ["1.20.1-forge-fabric-like"],
             "tokens": {
                 "__MIXIN_FABRIC_BLOCK": "#MIXIN_FABRIC_BLOCK",
                 "__MIXIN_QUILT_BLOCK": "#MIXIN_QUILT_BLOCK",
