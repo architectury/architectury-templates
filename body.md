@@ -37,7 +37,7 @@ There are currently three variants of the Architectury Templates:
 
 ## How to setup the template
 
-Please read this documentation: [Getting Started with Architectury](https://docs.architectury.dev/plugin/get_started).
+Please read this documentation: [Get Started with Architectury](https://docs.architectury.dev/plugin/get_started).
 
 
 
