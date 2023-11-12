@@ -1,4 +1,4 @@
-Architectury Templates can be used for setting your own architectury projects, for converting your existing projects to architectury projects, please refer to [Architectury Example Mod](https://github.com/architectury/architectury-example-mod) instead.
+Architectury Templates can be used for setting your own Architectury projects and converting your existing projects to Architectury projects.
 
 The following templates are offered in [Creative Commons Zero v1.0 Universal](https://github.com/architectury/architectury-example-mod/blob/1.17.1/LICENSE).
 
@@ -37,7 +37,7 @@ There are currently three variants of the Architectury Templates:
 
 ## How to setup the template
 
-Please read this documentation: [https://docs.architectury.dev/docs/architectury_api/getting_started.html](https://docs.architectury.dev/docs/architectury_api/getting_started.html).
+Please read this documentation: [Get Started with Architectury](https://docs.architectury.dev/plugin/get_started).
 
 
 
